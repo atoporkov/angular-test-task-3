@@ -1,0 +1,12 @@
+<div class="comment-entity-component-container">
+    <div class="comment-header">
+        <div class="image">
+            <img ng-src="{{$ctrl.getTrustedUrl($ctrl.data.snippet.authorProfileImageUrl)}}" />
+        </div>
+        <div class="author">
+            {{$ctrl.data.snippet.authorDisplayName}}
+            <i>({{$ctrl.data.snippet.publishedAt | date:'dd-MM-yyyy HH:mm:ss'}})</i>
+        </div>
+    </div>
+    <div ng-bind-html="$ctrl.data.snippet.textDisplay" class="comment-body"></div>
+</div>

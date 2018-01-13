@@ -1,0 +1,29 @@
+<div class="video-viewer-component-container">
+    <div class="video-container">
+        <iframe ng-if="$ctrl.data.id"
+            ng-src="{{$ctrl.getTrustedUrl($ctrl.data.id)}}">
+        </iframe>
+    </div>
+    <div class="data-container">
+        <div class="tags">
+            <span ng-repeat="tag in $ctrl.data.snippet.tags" class="tag">#{{tag}}</span>
+        </div>
+        <div class="title">
+            {{$ctrl.data.snippet.title}}
+        </div>
+        <div class="channel">
+            {{$ctrl.data.snippet.channelTitle}}
+        </div>
+        <div class="descr">
+            <div class="descr-body" ng-class="{'read-more': $ctrl.readMore}">
+                <pre ng-bind-html="$ctrl.data.snippet.description | linky"></pre>
+            </div>
+            <a class="toggle-read-more" href="#" ng-click="$ctrl.readMore = !$ctrl.readMore">Read more</a>
+        </div>
+    </div>
+    <div class="comments-container" id="commentsContainer">
+        <div class="comment-entity" ng-if="$ctrl.data.comments" ng-repeat="comment in $ctrl.data.comments">
+            <comment-entity data="comment.snippet.topLevelComment"></comment-entity>
+        </div>
+    </div>
+</div>

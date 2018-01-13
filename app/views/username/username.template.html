@@ -1,0 +1,11 @@
+<div class="username-view-container">
+    <div class="notification">{{$ctrl.notification}}</div>
+    <form class="form" ng-submit="$ctrl.onFormSubmit()" novalidate>
+        <div class="form-group">
+            <input type="text" ng-model="$ctrl.username" placeholder="Username"/>
+        </div>
+        <div class="form-group">
+            <input ng-disabled="!$ctrl.username" type="submit" value="Next" />
+        </div>
+    </form>
+</div>

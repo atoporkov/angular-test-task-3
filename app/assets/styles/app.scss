@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .container {
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+
+        .notification {
+            color: red;
+            font-style: italic;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .form {
+            padding: 20px;
+            .form-group {
+                display: inline-block;
+            }
+        }
+
+        .empty-result {
+            padding: 20px;
+            font-size: 1.5em;
+        }
+    }
+}

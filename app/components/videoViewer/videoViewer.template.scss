@@ -1,0 +1,61 @@
+.video-viewer-component-container {
+
+    .video-container {
+        width: 500px;
+        height: 300px;
+        iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .data-container {
+        max-width: 500px;
+        margin-top: 20px;
+        .tags {
+            .tag {
+                border-radius: 20px;
+                background-color: #ccc;
+                padding: 5px;
+                margin: 1%;
+                display: inline-block;
+                font-size: 0.8em;
+            }
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+        .channel {
+            margin-top: 10px;
+            font-size: 1em;
+            font-style: italic;
+        }
+        .descr {
+            font-size: 1em;
+            margin-top: 20px;
+            .descr-body {
+                height: 175px;
+                overflow: hidden;
+                &.read-more {
+                    overflow: visible;
+                    height: auto;
+                }
+            }
+            .toggle-read-more {
+                float: right;
+            }
+        }
+    }
+    .comments-container {
+        margin-top: 40px;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 15px;
+        .comment-entity {
+            margin-bottom: 10px;
+        }
+    }
+}

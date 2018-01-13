@@ -1,0 +1,9 @@
+<div class="video-entity-component-container">
+    <div class="thumbnail-container">
+        <img ng-click="$ctrl.onThumbClick()"
+            ng-src="{{$ctrl.getTrustedUrl($ctrl.data.snippet.thumbnails.default.url)}}" />
+    </div>
+    <div class="title-container">
+        {{$ctrl.data.snippet.title}}
+    </div>
+</div>

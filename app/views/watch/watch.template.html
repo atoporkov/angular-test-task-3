@@ -1,0 +1,9 @@
+<div class="watch-view-container">
+    <div class="notification">{{$ctrl.notification}}</div>
+    <div class="empty-result" ng-if="$ctrl.emptyResult">
+            The video does not exist
+        </div>
+    <div class="video-viewer">
+        <video-viewer data="$ctrl.data" on-comments-load="$ctrl.moreComments()"></video-viewer>
+    </div>
+</div>
