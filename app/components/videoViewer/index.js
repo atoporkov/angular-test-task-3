@@ -1,5 +1,3 @@
-import angular from 'angular';
-
 import VideoViewer from './videoViewer.controller';
 
 import './videoViewer.template.scss';

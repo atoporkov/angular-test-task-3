@@ -1,5 +1,3 @@
-import angular from 'angular';
-
 import CommentEntity from './commentEntity.controller';
 
 import './commentEntity.template.scss';

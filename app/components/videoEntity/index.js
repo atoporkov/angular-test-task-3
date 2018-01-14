@@ -1,5 +1,3 @@
-import angular from 'angular';
-
 import VideoEntity from './videoEntity.controller';
 
 import './videoEntity.template.scss';
