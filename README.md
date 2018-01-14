@@ -4,4 +4,4 @@
 2) nom run-script data-server
 
 npm -v => 3.10.10
-node - v => 6.11.5
+node -v => 6.11.5
